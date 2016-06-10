@@ -1,6 +1,10 @@
 #' Test for significant difference between 2 vectors
 #' @param x First data vector
 #' @param y Second data vector
+#' This function tests if the distributions of the 2 vectors follow normality
+#' and performs t-test for normal data
+#' Wilcox test for non-normal data
+#' @return p-value denoting the significance
 #' @export
 
 pvalue <- function(x, y){
