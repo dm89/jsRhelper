@@ -5,5 +5,12 @@
 
 ttest_pvalue <- function(x, y){
   out <- t.test(x, y)
-  out$p.value
+  pval <- out$p.value
+  if( pval < 0.05 ) {
+    ret = "**";
+  }
+  else {
+    ret = "#";
+  }
+  return(ret)
 }
