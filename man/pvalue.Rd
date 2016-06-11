@@ -14,9 +14,6 @@ This function tests if the distributions of the 2 vectors follow normality
 and performs t-test for normal data
 Wilcox test for non-normal data}
 }
-\value{
-p-value denoting the significance
-}
 \description{
 Test for significant difference between 2 vectors
 }
